@@ -45,11 +45,14 @@ var todoFunctions = {
     // this element will have its done value toggled
     // hint: array.map
     return this.cloneArrayOfObjects(todos).map( x => {
-      if (x.id == idToMark && x.done == false) {
-        return {...x, done: true}
-      }
-      else if (x.id == idToMark && x.done == true) {
+      // if idToMark is already done, then sets done to false
+      if (x.id == idToMark && x.done == true) {
         return {...x, done: false}
+      }
+      // if idToMark doesn't have anything yet, then return true, or keep true in place if
+      // already marked as done
+      else if (x.id == idToMark || x.done == true) {
+        return {...x, done: true}
       }
       else {
         return {...x, done: false}

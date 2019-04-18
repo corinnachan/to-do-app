@@ -1,1 +1,109 @@
+* {
+  font-family: Noto Sans, serif;
+  font-size: 16px / 1rem;
+  line-height: 1.5;
+  color: #0A2954;
+  background-color: #FCFCFA;
+}
 
+header {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+}
+
+button.sort {
+  background-color: #eca21a;
+  color: white;
+}
+
+#sort-container {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-right: 0.5rem;
+}
+
+
+li {
+  margin: 0.5rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 5px solid #2155bc;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+li span {
+  flex: 5;
+  background: inherit;
+}
+
+li button {
+  flex: 1;
+}
+
+li.checked-off {
+  background: #96c4e3;
+}
+
+
+button.mark {
+  background: rgb(4,104,101);
+  color: white;
+  align-self: auto;
+}
+
+button.delete {
+  font-weight: bold;
+  background: rgb(255,25,33);
+  color: white;
+}
+
+form {
+  background-color:  #eca21a;
+  margin: 1rem 0.5rem 1rem 2.75rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 5px solid #2155bc;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form input, form label {
+  display: block;
+}
+
+form input {
+  box-sizing: border-box;
+  height: 3rem;
+  flex: 5;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+
+form input[type="submit"] {
+  flex: 2;
+  margin: 1rem;
+  background-color: #2155bc;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
