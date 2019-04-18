@@ -71,6 +71,13 @@
     });
   }
 
+  //sort button action
+  var sortButtonNode = document.getElementById('sort-container').childNodes[1];
+
+  sortButtonNode.addEventListener('click', function(event) {
+    var newState = todoFunctions.sortTodos(state);
+    update(newState);
+  })
 
   // you should not need to change this function
   var update = function(newState) {
