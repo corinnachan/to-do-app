@@ -2,6 +2,8 @@
 
 This project was inspired by the Week 2 project mandate of Founders and Coders. The primary learning aim of this project is to apply TDD in a project setting, plus creating additional practice opportunities to stretch my HTML, CSS, and JavaScript knowledge! 
 
+Check out the project output [here](http://corinnachan.com/to-do-app/)!
+
 ## Minimum Viable Product :notebook:
 
 * Allows new items to be entered
